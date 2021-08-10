@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ name }} Homepage</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/success.css') }}"> 
+
+</head>
+<body >  
+      <section class="home" id="home">
+
+        <div style="padding-top: 80px;">
+            <center><h1 style="font-family: Times New Roman; font-size: 50px; color: white;">Welcome {{ name }}  </h1></center>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+              <a href="{{ url_for('studentProfile') }}">
+              <i class="fas fa-award"></i>
+                <h3>Student Profile</h3>
+                </a>
+            </div>
+        </div>
+    <!-- home section ends -->
+</body>
+</html>
